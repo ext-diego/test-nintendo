@@ -1,7 +1,14 @@
+import { useEffect } from "react";
+import app from "firebase/app";
+
 import logo from './logo.svg';
 import './App.css';
 
 const App = () => {
+  useEffect(() => {
+    console.log(app)
+  }, [])
+
   return (
     <div className="App">
       <header className="App-header">
