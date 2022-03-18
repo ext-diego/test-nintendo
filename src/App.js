@@ -1,12 +1,14 @@
 import { useEffect } from "react";
 import app from "firebase/app";
+import functions from "firebase-functions"
 
 import logo from './logo.svg';
 import './App.css';
 
 const App = () => {
   useEffect(() => {
-    console.log(app)
+    console.log('app', app)
+    console.log('functions', functions)
   }, [])
 
   return (
